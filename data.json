@@ -1,0 +1,33 @@
+﻿{
+  "model": "v6.0",
+  "updateTime": "2026-05-14T12:00:00+08:00",
+  "totalDraws": 84,
+  "nextPeriod": "2026134",
+  "nextDate": "2026-05-14",
+  "draws": [
+    {"idx":75,"period":"2026124","date":"05-04","num":39,"zodiac":"龙","predHit":null},
+    {"idx":76,"period":"2026125","date":"05-05","num":31,"zodiac":"鼠","predHit":null},
+    {"idx":77,"period":"2026126","date":"05-06","num":49,"zodiac":"马","predHit":null},
+    {"idx":78,"period":"2026127","date":"05-07","num":45,"zodiac":"狗","predHit":null},
+    {"idx":79,"period":"2026128","date":"05-08","num":37,"zodiac":"马","predHit":null},
+    {"idx":80,"period":"2026129","date":"05-09","num":41,"zodiac":"虎","predHit":null},
+    {"idx":81,"period":"2026130","date":"05-10","num":29,"zodiac":"虎","predHit":null},
+    {"idx":82,"period":"2026131","date":"05-11","num":7,"zodiac":"鼠","predHit":null},
+    {"idx":83,"period":"2026132","date":"05-12","num":30,"zodiac":"牛","predHit":true},
+    {"idx":84,"period":"2026133","date":"05-13","num":7,"zodiac":"鼠","predHit":false}
+  ],
+  "prediction": {
+    "period": "2026134",
+    "date": "2026-05-14",
+    "top7": ["羊","猴","兔","蛇","鸡","龙","马"],
+    "scores": {"羊":32.86,"猴":32.50,"兔":32.50,"蛇":31.79,"鸡":17.86,"龙":17.14,"马":11.93}
+  },
+  "stats": {
+    "rollHitRate": 0.685,
+    "mcHitRate": 0.604,
+    "mcP95": 0.728,
+    "liveHits": 1,
+    "liveTotal": 2
+  },
+  "zodiacCounts": {"虎":10,"马":11,"羊":8,"鸡":8,"牛":7,"兔":7,"鼠":6,"龙":6,"猴":7,"狗":6,"蛇":5,"猪":3}
+}
