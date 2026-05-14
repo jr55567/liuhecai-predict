@@ -1,0 +1,289 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>六合彩预测看板 · v6.0</title>
+<style>
+:root {
+  --bg: #0a0a14;
+  --surface: #141428;
+  --surface2: #1a1a32;
+  --border: #2a2a4a;
+  --gold: #f0c060;
+  --gold-dim: #8a6a2a;
+  --red: #e05555;
+  --green: #4ecb71;
+  --blue: #5b9cf5;
+  --purple: #a78bfa;
+  --text: #d0d0e0;
+  --text-dim: #8888a8;
+  --font: 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  --font-mono: 'Cascadia Code', 'Fira Code', 'Consolas', monospace;
+}
+* { margin:0; padding:0; box-sizing:border-box; }
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font);
+  min-height: 100vh;
+  background-image:
+    radial-gradient(ellipse at 20% 10%, rgba(240,192,96,0.04) 0%, transparent 60%),
+    radial-gradient(ellipse at 80% 90%, rgba(91,156,245,0.03) 0%, transparent 60%);
+}
+.header {
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+  padding: 18px 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky; top: 0; z-index: 100;
+  backdrop-filter: blur(12px);
+}
+.header-left { display:flex; align-items:center; gap:16px; }
+.header-logo {
+  width: 42px; height: 42px;
+  background: linear-gradient(135deg, var(--gold), #e8a020);
+  border-radius: 10px;
+  display: flex; align-items:center; justify-content:center;
+  font-size: 20px; font-weight: 900; color: #1a1a2e;
+}
+.header h1 { font-size: 22px; font-weight: 700; letter-spacing: 1px; }
+.header h1 span { color: var(--gold); }
+.badge { font-size: 11px; padding: 3px 10px; border-radius: 20px; font-weight: 600; letter-spacing: 0.5px; }
+.badge-ver { background: rgba(240,192,96,0.15); color: var(--gold); }
+.badge-live { background: rgba(78,203,113,0.15); color: var(--green); animation: pulse 2s infinite; }
+@keyframes pulse { 0%,100%{opacity:1} 50%{opacity:.5} }
+.header-right { display:flex; gap:20px; font-size:13px; color:var(--text-dim); }
+.header-right strong { color: var(--text); }
+.main { max-width:1400px; margin:0 auto; padding:24px 32px; display:grid; grid-template-columns: 1fr 1fr; grid-template-rows: auto auto; gap:20px; }
+@media(max-width:900px){ .main { grid-template-columns:1fr; } }
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 14px; padding: 24px;
+  transition: border-color 0.2s;
+}
+.card:hover { border-color: var(--gold-dim); }
+.card-title {
+  font-size: 15px; font-weight: 700; margin-bottom: 18px;
+  display:flex; align-items:center; gap:10px;
+  text-transform: uppercase; letter-spacing: 1px;
+}
+.card-title .icon { font-size:20px; }
+.card-full { grid-column: 1 / -1; }
+.table-wrap { overflow-x: auto; }
+table { width:100%; border-collapse:collapse; font-size:13px; }
+th {
+  text-align:left; color:var(--text-dim); font-weight:600; font-size:11px;
+  text-transform:uppercase; letter-spacing:0.5px; padding:10px 12px;
+  border-bottom:2px solid var(--border);
+}
+td { padding:9px 12px; border-bottom:1px solid rgba(42,42,74,0.5); white-space:nowrap; }
+tr:hover td { background: rgba(255,255,255,0.02); }
+.num { font-family:var(--font-mono); font-weight:600; text-align:center; }
+.zodiac-tag { display:inline-block; padding:2px 10px; border-radius:12px; font-size:12px; font-weight:600; letter-spacing:0.5px; }
+.hit-true { color:var(--green); font-weight:700; }
+.hit-false { color:var(--red); }
+.z-鼠{background:rgba(139,139,139,0.2);color:#b0b0b0} .z-牛{background:rgba(139,104,58,0.2);color:#c49656}
+.z-虎{background:rgba(226,137,53,0.2);color:#e28935} .z-兔{background:rgba(231,148,168,0.2);color:#e794a8}
+.z-龙{background:rgba(217,183,64,0.2);color:#d9b740} .z-蛇{background:rgba(109,165,95,0.2);color:#80c070}
+.z-马{background:rgba(201,92,92,0.2);color:#d97070} .z-羊{background:rgba(218,210,178,0.2);color:#dad2b2}
+.z-猴{background:rgba(161,117,66,0.2);color:#c49a60} .z-鸡{background:rgba(222,173,97,0.2);color:#dead61}
+.z-狗{background:rgba(216,174,93,0.2);color:#d8ae5d} .z-猪{background:rgba(219,161,169,0.2);color:#dba1a9}
+.prediction-rank { display:flex; flex-direction:column; gap:8px; margin-bottom:20px; }
+.pred-item {
+  display:flex; align-items:center; gap:12px; padding:10px 14px;
+  border-radius:10px; background:var(--surface2);
+  border:1px solid transparent; transition:all 0.2s;
+}
+.pred-item:hover { border-color:var(--gold-dim); transform:translateX(4px); }
+.pred-item.rank-1 { border-color:rgba(240,192,96,0.3); background:rgba(240,192,96,0.06); }
+.pred-item.rank-2 { border-color:rgba(192,192,192,0.3); background:rgba(192,192,192,0.04); }
+.pred-item.rank-3 { border-color:rgba(180,130,80,0.3); background:rgba(180,130,80,0.04); }
+.pred-rank-num { font-size:20px; font-weight:900; width:32px; text-align:center; color:var(--text-dim); }
+.pred-rank-num.top { color:var(--gold); }
+.pred-zodiac { font-size:28px; }
+.pred-name { font-size:15px; font-weight:700; min-width:28px; }
+.pred-score { font-family:var(--font-mono); font-size:12px; color:var(--text-dim); min-width:50px; text-align:right; }
+.pred-miss { font-size:11px; color:var(--red); min-width:60px; text-align:right; }
+.pred-miss.fire { color:#ff6b35; font-weight:700; }
+.pred-numbers { font-family:var(--font-mono); font-size:12px; color:var(--blue); flex:1; }
+.stat-row { display:flex; gap:14px; flex-wrap:wrap; margin-bottom:20px; }
+.stat-box { flex:1; min-width:100px; background:var(--surface2); border-radius:10px; padding:14px; text-align:center; }
+.stat-value { font-size:28px; font-weight:900; font-family:var(--font-mono); }
+.stat-value.gold { color:var(--gold); }
+.stat-value.green { color:var(--green); }
+.stat-value.red { color:var(--red); }
+.stat-label { font-size:11px; color:var(--text-dim); margin-top:4px; text-transform:uppercase; letter-spacing:0.5px; }
+.bar-row { display:flex; align-items:center; gap:8px; margin:3px 0; font-size:12px; }
+.bar-zodiac { width:36px; text-align:right; font-weight:600; }
+.bar-track { flex:1; height:18px; background:var(--surface2); border-radius:9px; overflow:hidden; }
+.bar-fill { height:100%; border-radius:9px; transition:width 0.6s; }
+.bar-fill.high { background:linear-gradient(90deg, #ff6b35, #e05555); }
+.bar-fill.mid { background:linear-gradient(90deg, #f0c060, #e8a020); }
+.bar-fill.low { background:linear-gradient(90deg, #5b9cf5, #4ecb71); }
+.bar-val { font-family:var(--font-mono); font-size:11px; width:36px; color:var(--text-dim); }
+.zodiac-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:8px; }
+.zodiac-cell {
+  background:var(--surface2); border-radius:8px; padding:10px;
+  text-align:center; transition:all 0.2s;
+}
+.zodiac-cell:hover { background:rgba(240,192,96,0.08); transform:translateY(-2px); }
+.zodiac-cell .z-emoji { font-size:24px; }
+.zodiac-cell .z-name { font-size:12px; font-weight:600; margin:4px 0; }
+.zodiac-cell .z-nums { font-family:var(--font-mono); font-size:11px; color:var(--text-dim); }
+.zodiac-cell .z-count { font-size:10px; color:var(--gold); margin-top:2px; }
+.footer { text-align:center; padding:24px; color:var(--text-dim); font-size:11px; border-top:1px solid var(--border); margin-top:40px; }
+</style>
+</head>
+<body>
+<div class="header">
+  <div class="header-left">
+    <div class="header-logo">🎯</div>
+    <h1>六合彩<span>预测看板</span></h1>
+    <span class="badge badge-ver">v6.0</span>
+    <span class="badge badge-live">● 实盘验证中</span>
+  </div>
+  <div class="header-right">
+    <div>数据截至 <strong>2026-05-13</strong></div>
+    <div>累计 <strong>84期</strong></div>
+    <div>下期 <strong>第85期 05-14</strong></div>
+  </div>
+</div>
+
+<div class="main">
+  <div class="card card-full">
+    <div class="card-title"><span class="icon">📊</span> 模型概览</div>
+    <div class="stat-row">
+      <div class="stat-box"><div class="stat-value gold">68.5%</div><div class="stat-label">滚动回测命中率 (54期)</div></div>
+      <div class="stat-box"><div class="stat-value green">60.4%</div><div class="stat-label">蒙特卡洛日均命中率</div></div>
+      <div class="stat-box"><div class="stat-value">72.8%</div><div class="stat-label">蒙特卡洛P95</div></div>
+      <div class="stat-box"><div class="stat-value">7</div><div class="stat-label">TOPK推荐生肖数</div></div>
+      <div class="stat-box"><div class="stat-value red">1/2</div><div class="stat-label">实盘命中 (50%)</div></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-title"><span class="icon">📋</span> 最近10期开奖</div>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>序号</th><th>期号</th><th>日期</th><th>号码</th><th>生肖</th><th>预测结果</th></tr></thead>
+        <tbody id="recent-draws"></tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-title"><span class="icon">🔢</span> 生肖号码对照表</div>
+    <div class="zodiac-grid" id="zodiac-grid"></div>
+  </div>
+
+  <div class="card">
+    <div class="card-title"><span class="icon">🎯</span> 第85期预测 · 2026-05-14</div>
+    <div class="prediction-rank" id="prediction-list"></div>
+    <div style="margin-top:16px; padding:12px; background:var(--surface2); border-radius:8px; font-family:var(--font-mono); font-size:12px; color:var(--blue);">
+      📌 推荐号码 (<span id="num-count">0</span>个): <span id="pred-numbers"></span>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-title"><span class="icon">🔥</span> 当下遗漏分析</div>
+    <div id="miss-bars"></div>
+  </div>
+</div>
+
+<div class="footer">
+  数据来源: limaoqiu.com &nbsp;|&nbsp; 模型: 六合彩v6.0 离散遗漏+近5期热号 &nbsp;|&nbsp; 每晚21:35自动更新
+</div>
+
+<script>
+const ZN={"鼠":[7,19,31,43],"牛":[6,18,30,42],"虎":[5,17,29,41],"兔":[4,16,28,40],"龙":[3,15,27,39],"蛇":[2,14,26,38],"马":[1,13,25,37,49],"羊":[12,24,36,48],"猴":[11,23,35,47],"鸡":[10,22,34,46],"狗":[9,21,33,45],"猪":[8,20,32,44]};
+const ZE={"鼠":"🐭","牛":"🐮","虎":"🐯","兔":"🐰","龙":"🐲","蛇":"🐍","马":"🐴","羊":"🐑","猴":"🐵","鸡":"🐔","狗":"🐶","猪":"🐷"};
+const D=[
+{idx:1,period:"2026050",date:"02-19",num:23,z:"猴"},{idx:2,period:"2026051",date:"02-20",num:1,z:"马"},
+{idx:3,period:"2026052",date:"02-21",num:38,z:"蛇"},{idx:4,period:"2026053",date:"02-22",num:15,z:"龙"},
+{idx:5,period:"2026054",date:"02-23",num:48,z:"羊"},{idx:6,period:"2026055",date:"02-24",num:14,z:"蛇"},
+{idx:7,period:"2026056",date:"02-25",num:48,z:"羊"},{idx:8,period:"2026057",date:"02-26",num:23,z:"猴"},
+{idx:9,period:"2026058",date:"02-27",num:31,z:"鼠"},{idx:10,period:"2026059",date:"02-28",num:10,z:"鸡"},
+{idx:11,period:"2026060",date:"03-01",num:9,z:"狗"},{idx:12,period:"2026061",date:"03-02",num:29,z:"虎"},
+{idx:13,period:"2026062",date:"03-03",num:24,z:"羊"},{idx:14,period:"2026063",date:"03-04",num:28,z:"兔"},
+{idx:15,period:"2026064",date:"03-05",num:18,z:"牛"},{idx:16,period:"2026065",date:"03-06",num:5,z:"虎"},
+{idx:17,period:"2026066",date:"03-07",num:37,z:"马"},{idx:18,period:"2026067",date:"03-08",num:5,z:"虎"},
+{idx:19,period:"2026068",date:"03-09",num:23,z:"猴"},{idx:20,period:"2026069",date:"03-10",num:24,z:"羊"},
+{idx:21,period:"2026070",date:"03-11",num:25,z:"马"},{idx:22,period:"2026071",date:"03-12",num:48,z:"羊"},
+{idx:23,period:"2026072",date:"03-13",num:46,z:"鸡"},{idx:24,period:"2026073",date:"03-14",num:34,z:"鸡"},
+{idx:25,period:"2026074",date:"03-15",num:10,z:"鸡"},{idx:26,period:"2026075",date:"03-16",num:33,z:"狗"},
+{idx:27,period:"2026076",date:"03-17",num:2,z:"蛇"},{idx:28,period:"2026077",date:"03-18",num:29,z:"虎"},
+{idx:29,period:"2026078",date:"03-19",num:46,z:"鸡"},{idx:30,period:"2026079",date:"03-20",num:35,z:"猴"},
+{idx:31,period:"2026080",date:"03-21",num:3,z:"龙"},{idx:32,period:"2026081",date:"03-22",num:17,z:"虎"},
+{idx:33,period:"2026082",date:"03-23",num:27,z:"龙"},{idx:34,period:"2026083",date:"03-24",num:5,z:"虎"},
+{idx:35,period:"2026084",date:"03-25",num:16,z:"兔"},{idx:36,period:"2026085",date:"03-26",num:19,z:"鼠"},
+{idx:37,period:"2026086",date:"03-27",num:12,z:"羊"},{idx:38,period:"2026087",date:"03-28",num:26,z:"蛇"},
+{idx:39,period:"2026088",date:"03-29",num:27,z:"龙"},{idx:40,period:"2026089",date:"03-30",num:49,z:"马"},
+{idx:41,period:"2026090",date:"03-31",num:36,z:"羊"},{idx:42,period:"2026091",date:"04-01",num:37,z:"马"},
+{idx:43,period:"2026092",date:"04-02",num:6,z:"牛"},{idx:44,period:"2026093",date:"04-03",num:40,z:"兔"},
+{idx:45,period:"2026094",date:"04-04",num:17,z:"虎"},{idx:46,period:"2026095",date:"04-05",num:35,z:"猴"},
+{idx:47,period:"2026096",date:"04-06",num:43,z:"鼠"},{idx:48,period:"2026097",date:"04-07",num:11,z:"猴"},
+{idx:49,period:"2026098",date:"04-08",num:17,z:"虎"},{idx:50,period:"2026099",date:"04-09",num:12,z:"羊"},
+{idx:51,period:"2026100",date:"04-10",num:33,z:"狗"},{idx:52,period:"2026101",date:"04-11",num:39,z:"龙"},
+{idx:53,period:"2026102",date:"04-12",num:20,z:"猪"},{idx:54,period:"2026103",date:"04-13",num:6,z:"牛"},
+{idx:55,period:"2026104",date:"04-14",num:1,z:"马"},{idx:56,period:"2026105",date:"04-15",num:28,z:"兔"},
+{idx:57,period:"2026106",date:"04-16",num:22,z:"鸡"},{idx:58,period:"2026107",date:"04-17",num:49,z:"马"},
+{idx:59,period:"2026108",date:"04-18",num:45,z:"狗"},{idx:60,period:"2026109",date:"04-19",num:16,z:"兔"},
+{idx:61,period:"2026110",date:"04-20",num:30,z:"牛"},{idx:62,period:"2026111",date:"04-21",num:1,z:"马"},
+{idx:63,period:"2026112",date:"04-22",num:9,z:"狗"},{idx:64,period:"2026113",date:"04-23",num:2,z:"蛇"},
+{idx:65,period:"2026114",date:"04-24",num:30,z:"牛"},{idx:66,period:"2026115",date:"04-25",num:4,z:"兔"},
+{idx:67,period:"2026116",date:"04-26",num:22,z:"鸡"},{idx:68,period:"2026117",date:"04-27",num:16,z:"兔"},
+{idx:69,period:"2026118",date:"04-28",num:8,z:"猪"},{idx:70,period:"2026119",date:"04-29",num:11,z:"猴"},
+{idx:71,period:"2026120",date:"04-30",num:6,z:"牛"},{idx:72,period:"2026121",date:"05-01",num:44,z:"猪"},
+{idx:73,period:"2026122",date:"05-02",num:1,z:"马"},{idx:74,period:"2026123",date:"05-03",num:46,z:"鸡"},
+{idx:75,period:"2026124",date:"05-04",num:39,z:"龙"},{idx:76,period:"2026125",date:"05-05",num:31,z:"鼠"},
+{idx:77,period:"2026126",date:"05-06",num:49,z:"马"},{idx:78,period:"2026127",date:"05-07",num:45,z:"狗"},
+{idx:79,period:"2026128",date:"05-08",num:37,z:"马"},{idx:80,period:"2026129",date:"05-09",num:41,z:"虎"},
+{idx:81,period:"2026130",date:"05-10",num:29,z:"虎"},{idx:82,period:"2026131",date:"05-11",num:7,z:"鼠"},
+{idx:83,period:"2026132",date:"05-12",num:30,z:"牛"},{idx:84,period:"2026133",date:"05-13",num:7,z:"鼠"}
+];
+const PH={"2026132":{hit:true},"2026133":{hit:false}};
+
+// Recent 10
+const recent=D.slice(-10).reverse();
+const tb=document.getElementById('recent-draws');
+recent.forEach(d=>{
+  const ph=PH[d.period]; const hc=ph?(ph.hit?'hit-true':'hit-false'):'';
+  const ht=ph?(ph.hit?'✅ 命中':'❌ 未中'):'—';
+  tb.innerHTML+='<tr><td style="color:var(--text-dim)">#'+d.idx+'</td><td style="font-family:var(--font-mono);font-weight:600">'+d.period+'</td><td style="color:var(--text-dim)">'+d.date+'</td><td class="num" style="color:var(--gold)">'+String(d.num).padStart(2,'0')+'</td><td><span class="zodiac-tag z-'+d.z+'">'+ZE[d.z]+' '+d.z+'</span></td><td class="'+hc+'">'+ht+'</td></tr>';
+});
+
+// Zodiac grid
+const grid=document.getElementById('zodiac-grid');
+const cnts={}; D.forEach(d=>{cnts[d.z]=(cnts[d.z]||0)+1;});
+Object.entries(ZN).forEach(([z,nums])=>{grid.innerHTML+='<div class="zodiac-cell"><div class="z-emoji">'+ZE[z]+'</div><div class="z-name">'+z+'</div><div class="z-nums">'+nums.join(' ')+'</div><div class="z-count">出现'+(cnts[z]||0)+'次</div></div>';});
+
+// Miss bars
+const ALL=Object.keys(ZN); const ls={}; D.forEach((d,i)=>{ls[d.z]=i;});
+const misses=ALL.map(z=>{const m=z in ls?D.length-1-ls[z]:D.length; return{z,m};}).sort((a,b)=>b.m-a.m);
+const md=document.getElementById('miss-bars');
+misses.forEach(({z,m})=>{
+  const pct=Math.min(100,m/35*100);
+  const cls=m>=15?'high':m>=7?'mid':'low';
+  const fire=m>=15?' 🔥':'';
+  md.innerHTML+='<div class="bar-row"><span class="bar-zodiac">'+ZE[z]+' '+z+'</span><div class="bar-track"><div class="bar-fill '+cls+'" style="width:'+pct+'%"></div></div><span class="bar-val">'+m+'期'+fire+'</span></div>';
+});
+
+// Prediction
+const pred=[{z:"羊",sc:32.86,m:35},{z:"猴",sc:32.50,m:15},{z:"兔",sc:32.50,m:17},{z:"蛇",sc:31.79,m:21},{z:"鸡",sc:17.86,m:11},{z:"龙",sc:17.14,m:10},{z:"马",sc:11.93,m:6}];
+const pd=document.getElementById('prediction-list');
+pred.forEach((p,i)=>{
+  const rc=i<3?'rank-'+(i+1):'';
+  const rnc=i<3?'top':'';
+  const mc=p.m>=15?'fire':'';
+  pd.innerHTML+='<div class="pred-item '+rc+'"><span class="pred-rank-num '+rnc+'">#'+(i+1)+'</span><span class="pred-zodiac">'+ZE[p.z]+'</span><span class="pred-name">'+p.z+'</span><span class="pred-score">'+p.sc.toFixed(1)+'分</span><span class="pred-miss '+mc+'">遗漏'+p.m+'期</span><span class="pred-numbers">'+ZN[p.z].join(' ')+'</span></div>';
+});
+const an=[...new Set(pred.flatMap(p=>ZN[p.z]))].sort((a,b)=>a-b);
+document.getElementById('num-count').textContent=an.length;
+document.getElementById('pred-numbers').textContent=an.join('  ');
+</script>
+</body>
+</html>
