@@ -77,9 +77,37 @@ tr:hover td{background:rgba(255,255,255,0.02)}
 .zodiac-cell .z-count{font-size:9px;color:var(--gold);margin-top:2px}
 .footer{text-align:center;padding:16px;color:var(--text-dim);font-size:10px;border-top:1px solid var(--border);margin-top:32px}
 .refresh-info{font-size:10px;color:var(--text-dim);margin-left:8px}
+/* Password Gate */
+.pw-overlay{position:fixed;top:0;left:0;width:100%;height:100%;background:var(--bg);
+  display:flex;align-items:center;justify-content:center;z-index:9999;
+  background-image:radial-gradient(ellipse at 50% 30%,rgba(240,192,96,0.06) 0%,transparent 60%)}
+.pw-box{background:var(--surface);border:1px solid var(--border);border-radius:16px;
+  padding:40px 36px;text-align:center;max-width:380px;width:90%}
+.pw-box .pw-icon{font-size:48px;margin-bottom:16px}
+.pw-box h2{font-size:20px;margin-bottom:8px;color:var(--text)}
+.pw-box p{font-size:12px;color:var(--text-dim);margin-bottom:24px}
+.pw-box input{width:100%;padding:12px 16px;border-radius:10px;border:1px solid var(--border);
+  background:var(--surface2);color:var(--text);font-size:16px;text-align:center;
+  font-family:var(--font-mono);outline:none;transition:border-color 0.2s;
+  letter-spacing:3px}
+.pw-box input:focus{border-color:var(--gold)}
+.pw-box input.wrong{border-color:var(--red);animation:shake 0.4s}
+@keyframes shake{0%,100%{transform:translateX(0)}25%{transform:translateX(-8px)}75%{transform:translateX(8px)}}
+.pw-error{color:var(--red);font-size:11px;margin-top:8px;display:none}
+
 </style>
 </head>
 <body>
+<div class="pw-overlay" id="pw-gate">
+  <div class="pw-box">
+    <div class="pw-icon">&#x1F510;</div>
+    <h2>&#x516D;&#x5408;&#x5F69;&#x9884;&#x6D4B;&#x770B;&#x677F;</h2>
+    <p>&#x8BF7;&#x8F93;&#x5165;&#x5BC6;&#x7801;&#x8BBF;&#x95EE;</p>
+    <input type="password" id="pw-input" placeholder="&#x8BF7;&#x8F93;&#x5165;&#x5BC6;&#x7801;" autofocus>
+    <p class="pw-error" id="pw-error">&#x5BC6;&#x7801;&#x9519;&#x8BEF;&#xFF0C;&#x8BF7;&#x91CD;&#x8BD5;</p>
+  </div>
+</div>
+
 <div class="header">
   <div class="header-left">
     <div class="header-logo">🎯</div>
@@ -192,6 +220,33 @@ function render(d){
 }
 
 load();
+// Password gate
+(async function(){
+  const HASH='dbe1908513b8f6601f8b6a8a5dd3cb7d0f30aad1d3685fc1db089a40e5e44270';
+  if(sessionStorage.getItem('pw_ok')==='1') return;
+  const gate=document.getElementById('pw-gate');
+  const inp=document.getElementById('pw-input');
+  const err=document.getElementById('pw-error');
+  gate.style.display='flex';
+  async function check(){
+    const data=new TextEncoder().encode(inp.value);
+    const hash=Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256',data)))
+      .map(b=>b.toString(16).padStart(2,'0')).join('');
+    if(hash===HASH){
+      sessionStorage.setItem('pw_ok','1');
+      gate.style.display='none';
+    }else{
+      inp.classList.add('wrong');
+      err.style.display='block';
+      inp.value='';
+      setTimeout(function(){inp.classList.remove('wrong');},400);
+    }
+  }
+  inp.addEventListener('keydown',function(e){if(e.key==='Enter')check();});
+  inp.addEventListener('input',function(){err.style.display='none';});
+  inp.addEventListener('blur',function(){if(inp.value)check();});
+})();
+
 </script>
 </body>
 </html>
