@@ -1,7 +1,7 @@
 {
     "model":  "v5.3",
-    "updateTime":  "2026-06-02T21:37:30",
-    "totalDraws":  104,
+    "updateTime":  "2026-06-02T21:38:09",
+    "totalDraws":  105,
     "nextPeriod":  "2026154",
     "nextDate":  "2026-06-03",
     "draws":  [
@@ -827,6 +827,14 @@
                       "date":  "06-01",
                       "num":  45,
                       "zodiac":  "狗",
+                      "predHit":  false
+                  },
+                  {
+                      "idx":  104,
+                      "period":  "2026153",
+                      "date":  "06-02",
+                      "num":  41,
+                      "zodiac":  "虎",
                       "predHit":  false
                   },
                   {
