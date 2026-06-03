@@ -1,923 +1,915 @@
 {
-    "model":  "v5.4b",
-    "updateTime":  "2026-06-03T10:45:45",
-    "totalDraws":  105,
-    "nextPeriod":  "2026154",
-    "nextDate":  "2026-06-03",
-    "draws":  [
-                  {
-                      "idx":  1,
-                      "period":  "2026050",
-                      "date":  "02-19",
-                      "num":  23,
-                      "zodiac":  "猴",
-                      "predHit":  null
-                  },
-                  {
-                      "idx":  2,
-                      "period":  "2026051",
-                      "date":  "02-20",
-                      "num":  1,
-                      "zodiac":  "马",
-                      "predHit":  null
-                  },
-                  {
-                      "idx":  3,
-                      "period":  "2026052",
-                      "date":  "02-21",
-                      "num":  38,
-                      "zodiac":  "蛇",
-                      "predHit":  null
-                  },
-                  {
-                      "idx":  4,
-                      "period":  "2026053",
-                      "date":  "02-22",
-                      "num":  15,
-                      "zodiac":  "龙",
-                      "predHit":  null
-                  },
-                  {
-                      "idx":  5,
-                      "period":  "2026054",
-                      "date":  "02-23",
-                      "num":  48,
-                      "zodiac":  "羊",
-                      "predHit":  null
-                  },
-                  {
-                      "idx":  6,
-                      "period":  "2026055",
-                      "date":  "02-24",
-                      "num":  14,
-                      "zodiac":  "蛇",
-                      "predHit":  null
-                  },
-                  {
-                      "idx":  7,
-                      "period":  "2026056",
-                      "date":  "02-25",
-                      "num":  48,
-                      "zodiac":  "羊",
-                      "predHit":  null
-                  },
-                  {
-                      "idx":  8,
-                      "period":  "2026057",
-                      "date":  "02-26",
-                      "num":  23,
-                      "zodiac":  "猴",
-                      "predHit":  null
-                  },
-                  {
-                      "idx":  9,
-                      "period":  "2026058",
-                      "date":  "02-27",
-                      "num":  31,
-                      "zodiac":  "鼠",
-                      "predHit":  null
-                  },
-                  {
-                      "idx":  10,
-                      "period":  "2026059",
-                      "date":  "02-28",
-                      "num":  10,
-                      "zodiac":  "鸡",
-                      "predHit":  null
-                  },
-                  {
-                      "idx":  11,
-                      "period":  "2026060",
-                      "date":  "03-01",
-                      "num":  9,
-                      "zodiac":  "狗",
-                      "predHit":  null
-                  },
-                  {
-                      "idx":  12,
-                      "period":  "2026061",
-                      "date":  "03-02",
-                      "num":  29,
-                      "zodiac":  "虎",
-                      "predHit":  null
-                  },
-                  {
-                      "idx":  13,
-                      "period":  "2026062",
-                      "date":  "03-03",
-                      "num":  24,
-                      "zodiac":  "羊",
-                      "predHit":  null
-                  },
-                  {
-                      "idx":  14,
-                      "period":  "2026063",
-                      "date":  "03-04",
-                      "num":  28,
-                      "zodiac":  "兔",
-                      "predHit":  null
-                  },
-                  {
-                      "idx":  15,
-                      "period":  "2026064",
-                      "date":  "03-05",
-                      "num":  18,
-                      "zodiac":  "牛",
-                      "predHit":  null
-                  },
-                  {
-                      "idx":  16,
-                      "period":  "2026065",
-                      "date":  "03-06",
-                      "num":  5,
-                      "zodiac":  "虎",
-                      "predHit":  null
-                  },
-                  {
-                      "idx":  17,
-                      "period":  "2026066",
-                      "date":  "03-07",
-                      "num":  37,
-                      "zodiac":  "马",
-                      "predHit":  null
-                  },
-                  {
-                      "idx":  18,
-                      "period":  "2026067",
-                      "date":  "03-08",
-                      "num":  5,
-                      "zodiac":  "虎",
-                      "predHit":  null
-                  },
-                  {
-                      "idx":  19,
-                      "period":  "2026068",
-                      "date":  "03-09",
-                      "num":  23,
-                      "zodiac":  "猴",
-                      "predHit":  null
-                  },
-                  {
-                      "idx":  20,
-                      "period":  "2026069",
-                      "date":  "03-10",
-                      "num":  24,
-                      "zodiac":  "羊",
-                      "predHit":  null
-                  },
-                  {
-                      "idx":  21,
-                      "period":  "2026070",
-                      "date":  "03-11",
-                      "num":  25,
-                      "zodiac":  "马",
-                      "predHit":  null
-                  },
-                  {
-                      "idx":  22,
-                      "period":  "2026071",
-                      "date":  "03-12",
-                      "num":  48,
-                      "zodiac":  "羊",
-                      "predHit":  null
-                  },
-                  {
-                      "idx":  23,
-                      "period":  "2026072",
-                      "date":  "03-13",
-                      "num":  46,
-                      "zodiac":  "鸡",
-                      "predHit":  null
-                  },
-                  {
-                      "idx":  24,
-                      "period":  "2026073",
-                      "date":  "03-14",
-                      "num":  34,
-                      "zodiac":  "鸡",
-                      "predHit":  null
-                  },
-                  {
-                      "idx":  25,
-                      "period":  "2026074",
-                      "date":  "03-15",
-                      "num":  10,
-                      "zodiac":  "鸡",
-                      "predHit":  null
-                  },
-                  {
-                      "idx":  26,
-                      "period":  "2026075",
-                      "date":  "03-16",
-                      "num":  33,
-                      "zodiac":  "狗",
-                      "predHit":  null
-                  },
-                  {
-                      "idx":  27,
-                      "period":  "2026076",
-                      "date":  "03-17",
-                      "num":  2,
-                      "zodiac":  "蛇",
-                      "predHit":  null
-                  },
-                  {
-                      "idx":  28,
-                      "period":  "2026077",
-                      "date":  "03-18",
-                      "num":  29,
-                      "zodiac":  "虎",
-                      "predHit":  null
-                  },
-                  {
-                      "idx":  29,
-                      "period":  "2026078",
-                      "date":  "03-19",
-                      "num":  46,
-                      "zodiac":  "鸡",
-                      "predHit":  null
-                  },
-                  {
-                      "idx":  30,
-                      "period":  "2026079",
-                      "date":  "03-20",
-                      "num":  35,
-                      "zodiac":  "猴",
-                      "predHit":  null
-                  },
-                  {
-                      "idx":  31,
-                      "period":  "2026080",
-                      "date":  "03-21",
-                      "num":  3,
-                      "zodiac":  "龙",
-                      "predHit":  null
-                  },
-                  {
-                      "idx":  32,
-                      "period":  "2026081",
-                      "date":  "03-22",
-                      "num":  17,
-                      "zodiac":  "虎",
-                      "predHit":  null
-                  },
-                  {
-                      "idx":  33,
-                      "period":  "2026082",
-                      "date":  "03-23",
-                      "num":  27,
-                      "zodiac":  "龙",
-                      "predHit":  null
-                  },
-                  {
-                      "idx":  34,
-                      "period":  "2026083",
-                      "date":  "03-24",
-                      "num":  5,
-                      "zodiac":  "虎",
-                      "predHit":  null
-                  },
-                  {
-                      "idx":  35,
-                      "period":  "2026084",
-                      "date":  "03-25",
-                      "num":  16,
-                      "zodiac":  "兔",
-                      "predHit":  null
-                  },
-                  {
-                      "idx":  36,
-                      "period":  "2026085",
-                      "date":  "03-26",
-                      "num":  19,
-                      "zodiac":  "鼠",
-                      "predHit":  null
-                  },
-                  {
-                      "idx":  37,
-                      "period":  "2026086",
-                      "date":  "03-27",
-                      "num":  12,
-                      "zodiac":  "羊",
-                      "predHit":  null
-                  },
-                  {
-                      "idx":  38,
-                      "period":  "2026087",
-                      "date":  "03-28",
-                      "num":  26,
-                      "zodiac":  "蛇",
-                      "predHit":  null
-                  },
-                  {
-                      "idx":  39,
-                      "period":  "2026088",
-                      "date":  "03-29",
-                      "num":  27,
-                      "zodiac":  "龙",
-                      "predHit":  null
-                  },
-                  {
-                      "idx":  40,
-                      "period":  "2026089",
-                      "date":  "03-30",
-                      "num":  49,
-                      "zodiac":  "马",
-                      "predHit":  null
-                  },
-                  {
-                      "idx":  41,
-                      "period":  "2026090",
-                      "date":  "03-31",
-                      "num":  36,
-                      "zodiac":  "羊",
-                      "predHit":  null
-                  },
-                  {
-                      "idx":  42,
-                      "period":  "2026091",
-                      "date":  "04-01",
-                      "num":  37,
-                      "zodiac":  "马",
-                      "predHit":  null
-                  },
-                  {
-                      "idx":  43,
-                      "period":  "2026092",
-                      "date":  "04-02",
-                      "num":  6,
-                      "zodiac":  "牛",
-                      "predHit":  null
-                  },
-                  {
-                      "idx":  44,
-                      "period":  "2026093",
-                      "date":  "04-03",
-                      "num":  40,
-                      "zodiac":  "兔",
-                      "predHit":  null
-                  },
-                  {
-                      "idx":  45,
-                      "period":  "2026094",
-                      "date":  "04-04",
-                      "num":  17,
-                      "zodiac":  "虎",
-                      "predHit":  null
-                  },
-                  {
-                      "idx":  46,
-                      "period":  "2026095",
-                      "date":  "04-05",
-                      "num":  35,
-                      "zodiac":  "猴",
-                      "predHit":  null
-                  },
-                  {
-                      "idx":  47,
-                      "period":  "2026096",
-                      "date":  "04-06",
-                      "num":  43,
-                      "zodiac":  "鼠",
-                      "predHit":  null
-                  },
-                  {
-                      "idx":  48,
-                      "period":  "2026097",
-                      "date":  "04-07",
-                      "num":  11,
-                      "zodiac":  "猴",
-                      "predHit":  null
-                  },
-                  {
-                      "idx":  49,
-                      "period":  "2026098",
-                      "date":  "04-08",
-                      "num":  17,
-                      "zodiac":  "虎",
-                      "predHit":  null
-                  },
-                  {
-                      "idx":  50,
-                      "period":  "2026099",
-                      "date":  "04-09",
-                      "num":  12,
-                      "zodiac":  "羊",
-                      "predHit":  null
-                  },
-                  {
-                      "idx":  51,
-                      "period":  "2026100",
-                      "date":  "04-10",
-                      "num":  33,
-                      "zodiac":  "狗",
-                      "predHit":  null
-                  },
-                  {
-                      "idx":  52,
-                      "period":  "2026101",
-                      "date":  "04-11",
-                      "num":  39,
-                      "zodiac":  "龙",
-                      "predHit":  null
-                  },
-                  {
-                      "idx":  53,
-                      "period":  "2026102",
-                      "date":  "04-12",
-                      "num":  20,
-                      "zodiac":  "猪",
-                      "predHit":  null
-                  },
-                  {
-                      "idx":  54,
-                      "period":  "2026103",
-                      "date":  "04-13",
-                      "num":  6,
-                      "zodiac":  "牛",
-                      "predHit":  null
-                  },
-                  {
-                      "idx":  55,
-                      "period":  "2026104",
-                      "date":  "04-14",
-                      "num":  1,
-                      "zodiac":  "马",
-                      "predHit":  null
-                  },
-                  {
-                      "idx":  56,
-                      "period":  "2026105",
-                      "date":  "04-15",
-                      "num":  28,
-                      "zodiac":  "兔",
-                      "predHit":  null
-                  },
-                  {
-                      "idx":  57,
-                      "period":  "2026106",
-                      "date":  "04-16",
-                      "num":  22,
-                      "zodiac":  "鸡",
-                      "predHit":  null
-                  },
-                  {
-                      "idx":  58,
-                      "period":  "2026107",
-                      "date":  "04-17",
-                      "num":  49,
-                      "zodiac":  "马",
-                      "predHit":  null
-                  },
-                  {
-                      "idx":  59,
-                      "period":  "2026108",
-                      "date":  "04-18",
-                      "num":  45,
-                      "zodiac":  "狗",
-                      "predHit":  null
-                  },
-                  {
-                      "idx":  60,
-                      "period":  "2026109",
-                      "date":  "04-19",
-                      "num":  16,
-                      "zodiac":  "兔",
-                      "predHit":  null
-                  },
-                  {
-                      "idx":  61,
-                      "period":  "2026110",
-                      "date":  "04-20",
-                      "num":  30,
-                      "zodiac":  "牛",
-                      "predHit":  null
-                  },
-                  {
-                      "idx":  62,
-                      "period":  "2026111",
-                      "date":  "04-21",
-                      "num":  1,
-                      "zodiac":  "马",
-                      "predHit":  null
-                  },
-                  {
-                      "idx":  63,
-                      "period":  "2026112",
-                      "date":  "04-22",
-                      "num":  9,
-                      "zodiac":  "狗",
-                      "predHit":  null
-                  },
-                  {
-                      "idx":  64,
-                      "period":  "2026113",
-                      "date":  "04-23",
-                      "num":  2,
-                      "zodiac":  "蛇",
-                      "predHit":  null
-                  },
-                  {
-                      "idx":  65,
-                      "period":  "2026114",
-                      "date":  "04-24",
-                      "num":  30,
-                      "zodiac":  "牛",
-                      "predHit":  null
-                  },
-                  {
-                      "idx":  66,
-                      "period":  "2026115",
-                      "date":  "04-25",
-                      "num":  4,
-                      "zodiac":  "兔",
-                      "predHit":  null
-                  },
-                  {
-                      "idx":  67,
-                      "period":  "2026116",
-                      "date":  "04-26",
-                      "num":  22,
-                      "zodiac":  "鸡",
-                      "predHit":  null
-                  },
-                  {
-                      "idx":  68,
-                      "period":  "2026117",
-                      "date":  "04-27",
-                      "num":  16,
-                      "zodiac":  "兔",
-                      "predHit":  null
-                  },
-                  {
-                      "idx":  69,
-                      "period":  "2026118",
-                      "date":  "04-28",
-                      "num":  8,
-                      "zodiac":  "猪",
-                      "predHit":  null
-                  },
-                  {
-                      "idx":  70,
-                      "period":  "2026119",
-                      "date":  "04-29",
-                      "num":  11,
-                      "zodiac":  "猴",
-                      "predHit":  null
-                  },
-                  {
-                      "idx":  71,
-                      "period":  "2026120",
-                      "date":  "04-30",
-                      "num":  6,
-                      "zodiac":  "牛",
-                      "predHit":  null
-                  },
-                  {
-                      "idx":  72,
-                      "period":  "2026121",
-                      "date":  "05-01",
-                      "num":  44,
-                      "zodiac":  "猪",
-                      "predHit":  null
-                  },
-                  {
-                      "idx":  73,
-                      "period":  "2026122",
-                      "date":  "05-02",
-                      "num":  1,
-                      "zodiac":  "马",
-                      "predHit":  null
-                  },
-                  {
-                      "idx":  74,
-                      "period":  "2026123",
-                      "date":  "05-03",
-                      "num":  46,
-                      "zodiac":  "鸡",
-                      "predHit":  null
-                  },
-                  {
-                      "idx":  75,
-                      "period":  "2026124",
-                      "date":  "05-04",
-                      "num":  39,
-                      "zodiac":  "龙",
-                      "predHit":  null
-                  },
-                  {
-                      "idx":  76,
-                      "period":  "2026125",
-                      "date":  "05-05",
-                      "num":  31,
-                      "zodiac":  "鼠",
-                      "predHit":  null
-                  },
-                  {
-                      "idx":  77,
-                      "period":  "2026126",
-                      "date":  "05-06",
-                      "num":  49,
-                      "zodiac":  "马",
-                      "predHit":  null
-                  },
-                  {
-                      "idx":  78,
-                      "period":  "2026127",
-                      "date":  "05-07",
-                      "num":  45,
-                      "zodiac":  "狗",
-                      "predHit":  null
-                  },
-                  {
-                      "idx":  79,
-                      "period":  "2026128",
-                      "date":  "05-08",
-                      "num":  37,
-                      "zodiac":  "马",
-                      "predHit":  null
-                  },
-                  {
-                      "idx":  80,
-                      "period":  "2026129",
-                      "date":  "05-09",
-                      "num":  41,
-                      "zodiac":  "虎",
-                      "predHit":  null
-                  },
-                  {
-                      "idx":  81,
-                      "period":  "2026130",
-                      "date":  "05-10",
-                      "num":  29,
-                      "zodiac":  "虎",
-                      "predHit":  null
-                  },
-                  {
-                      "idx":  82,
-                      "period":  "2026131",
-                      "date":  "05-11",
-                      "num":  7,
-                      "zodiac":  "鼠",
-                      "predHit":  null
-                  },
-                  {
-                      "idx":  83,
-                      "period":  "2026132",
-                      "date":  "05-12",
-                      "num":  30,
-                      "zodiac":  "牛",
-                      "predHit":  true
-                  },
-                  {
-                      "idx":  84,
-                      "period":  "2026133",
-                      "date":  "05-13",
-                      "num":  7,
-                      "zodiac":  "鼠",
-                      "predHit":  false
-                  },
-                  {
-                      "idx":  85,
-                      "period":  "2026134",
-                      "date":  "05-14",
-                      "num":  37,
-                      "zodiac":  "马",
-                      "predHit":  true
-                  },
-                  {
-                      "idx":  86,
-                      "period":  "2026135",
-                      "date":  "05-15",
-                      "num":  30,
-                      "zodiac":  "牛",
-                      "predHit":  false
-                  },
-                  {
-                      "idx":  87,
-                      "period":  "2026136",
-                      "date":  "05-16",
-                      "num":  48,
-                      "zodiac":  "羊",
-                      "predHit":  true
-                  },
-                  {
-                      "idx":  88,
-                      "period":  "2026137",
-                      "date":  "05-17",
-                      "num":  26,
-                      "zodiac":  "蛇",
-                      "predHit":  null
-                  },
-                  {
-                      "idx":  89,
-                      "period":  "2026138",
-                      "date":  "05-18",
-                      "num":  49,
-                      "zodiac":  "马",
-                      "predHit":  true
-                  },
-                  {
-                      "idx":  90,
-                      "period":  "2026139",
-                      "date":  "05-19",
-                      "num":  24,
-                      "zodiac":  "羊",
-                      "predHit":  false
-                  },
-                  {
-                      "idx":  91,
-                      "period":  "2026140",
-                      "date":  "05-20",
-                      "num":  16,
-                      "zodiac":  "兔",
-                      "predHit":  true
-                  },
-                  {
-                      "idx":  92,
-                      "period":  "2026141",
-                      "date":  "05-21",
-                      "num":  33,
-                      "zodiac":  "狗",
-                      "predHit":  true
-                  },
-                  {
-                      "idx":  93,
-                      "period":  "2026142",
-                      "date":  "05-22",
-                      "num":  23,
-                      "zodiac":  "猴",
-                      "predHit":  true
-                  },
-                  {
-                      "idx":  94,
-                      "period":  "2026143",
-                      "date":  "05-23",
-                      "num":  44,
-                      "zodiac":  "猪",
-                      "predHit":  false
-                  },
-                  {
-                      "idx":  95,
-                      "period":  "2026144",
-                      "date":  "05-24",
-                      "num":  43,
-                      "zodiac":  "鼠",
-                      "predHit":  true
-                  },
-                  {
-                      "idx":  96,
-                      "period":  "2026145",
-                      "date":  "05-25",
-                      "num":  5,
-                      "zodiac":  "虎",
-                      "predHit":  true
-                  },
-                  {
-                      "idx":  97,
-                      "period":  "2026146",
-                      "date":  "05-26",
-                      "num":  42,
-                      "zodiac":  "牛",
-                      "predHit":  true
-                  },
-                  {
-                      "idx":  98,
-                      "period":  "2026147",
-                      "date":  "05-27",
-                      "num":  13,
-                      "zodiac":  "马",
-                      "predHit":  false
-                  },
-                  {
-                      "idx":  99,
-                      "period":  "2026148",
-                      "date":  "05-28",
-                      "num":  48,
-                      "zodiac":  "羊",
-                      "predHit":  false
-                  },
-                  {
-                      "idx":  100,
-                      "period":  "2026149",
-                      "date":  "05-29",
-                      "num":  27,
-                      "zodiac":  "龙",
-                      "predHit":  true
-                  },
-                  {
-                      "idx":  101,
-                      "period":  "2026150",
-                      "date":  "05-30",
-                      "num":  9,
-                      "zodiac":  "狗",
-                      "predHit":  true
-                  },
-                  {
-                      "idx":  102,
-                      "period":  "2026151",
-                      "date":  "05-31",
-                      "num":  31,
-                      "zodiac":  "鼠",
-                      "predHit":  true
-                  },
-                  {
-                      "idx":  103,
-                      "period":  "2026152",
-                      "date":  "06-01",
-                      "num":  45,
-                      "zodiac":  "狗",
-                      "predHit":  false
-                  },
-                  {
-                      "idx":  104,
-                      "period":  "2026153",
-                      "date":  "06-02",
-                      "num":  41,
-                      "zodiac":  "虎",
-                      "predHit":  false
-                  },
-                  {
-                      "idx":  104,
-                      "period":  "2026153",
-                      "date":  "06-02",
-                      "num":  41,
-                      "zodiac":  "虎",
-                      "predHit":  false
-                  }
-              ],
-    "prediction":  {
-                       "period":  "2026154",
-                       "date":  "2026-06-03",
-                       "top7":  [
-                                    "马",
-                                    "牛",
-                                    "蛇",
-                                    "羊",
-                                    "鸡",
-                                    "兔",
-                                    "猴"
-                                ],
-                       "top24":  [
-                                     1,
-                                     6,
-                                     30,
-                                     37,
-                                     46,
-                                     2,
-                                     10,
-                                     11,
-                                     12,
-                                     22,
-                                     26,
-                                     28,
-                                     35,
-                                     4,
-                                     14,
-                                     18,
-                                     25,
-                                     34,
-                                     36,
-                                     38,
-                                     40,
-                                     47,
-                                     16,
-                                     23
-                                 ],
-                       "scores":  {
-                                      "牛":  23.88,
-                                      "羊":  17.77,
-                                      "猴":  16.38,
-                                      "龙":  12.08,
-                                      "鸡":  17.07,
-                                      "鼠":  -2.92,
-                                      "马":  24.66,
-                                      "狗":  1.88,
-                                      "兔":  16.78,
-                                      "猪":  12.99,
-                                      "虎":  0.06,
-                                      "蛇":  22.78
-                                  }
-                   },
-    "stats":  {
-                  "rollHitRate":  0.65,
-                  "mcHitRate":  0.604,
-                  "mcP95":  0.728,
-                  "liveHits":  13,
-                  "liveTotal":  20
-              },
-    "zodiacCounts":  {
-                         "猴":  8,
-                         "马":  13,
-                         "蛇":  6,
-                         "龙":  6,
-                         "羊":  10,
-                         "鼠":  7,
-                         "鸡":  8,
-                         "狗":  7,
-                         "虎":  11,
-                         "兔":  8,
-                         "牛":  9,
-                         "猪":  4
-                     }
+    "model": "v5.4b",
+    "updateTime": "2026-06-03T10:45:45",
+    "totalDraws": 104,
+    "nextPeriod": "2026154",
+    "nextDate": "2026-06-03",
+    "draws": [
+        {
+            "idx": 1,
+            "period": "2026050",
+            "date": "02-19",
+            "num": 23,
+            "zodiac": "猴",
+            "predHit": null
+        },
+        {
+            "idx": 2,
+            "period": "2026051",
+            "date": "02-20",
+            "num": 1,
+            "zodiac": "马",
+            "predHit": null
+        },
+        {
+            "idx": 3,
+            "period": "2026052",
+            "date": "02-21",
+            "num": 38,
+            "zodiac": "蛇",
+            "predHit": null
+        },
+        {
+            "idx": 4,
+            "period": "2026053",
+            "date": "02-22",
+            "num": 15,
+            "zodiac": "龙",
+            "predHit": null
+        },
+        {
+            "idx": 5,
+            "period": "2026054",
+            "date": "02-23",
+            "num": 48,
+            "zodiac": "羊",
+            "predHit": null
+        },
+        {
+            "idx": 6,
+            "period": "2026055",
+            "date": "02-24",
+            "num": 14,
+            "zodiac": "蛇",
+            "predHit": null
+        },
+        {
+            "idx": 7,
+            "period": "2026056",
+            "date": "02-25",
+            "num": 48,
+            "zodiac": "羊",
+            "predHit": null
+        },
+        {
+            "idx": 8,
+            "period": "2026057",
+            "date": "02-26",
+            "num": 23,
+            "zodiac": "猴",
+            "predHit": null
+        },
+        {
+            "idx": 9,
+            "period": "2026058",
+            "date": "02-27",
+            "num": 31,
+            "zodiac": "鼠",
+            "predHit": null
+        },
+        {
+            "idx": 10,
+            "period": "2026059",
+            "date": "02-28",
+            "num": 10,
+            "zodiac": "鸡",
+            "predHit": null
+        },
+        {
+            "idx": 11,
+            "period": "2026060",
+            "date": "03-01",
+            "num": 9,
+            "zodiac": "狗",
+            "predHit": null
+        },
+        {
+            "idx": 12,
+            "period": "2026061",
+            "date": "03-02",
+            "num": 29,
+            "zodiac": "虎",
+            "predHit": null
+        },
+        {
+            "idx": 13,
+            "period": "2026062",
+            "date": "03-03",
+            "num": 24,
+            "zodiac": "羊",
+            "predHit": null
+        },
+        {
+            "idx": 14,
+            "period": "2026063",
+            "date": "03-04",
+            "num": 28,
+            "zodiac": "兔",
+            "predHit": null
+        },
+        {
+            "idx": 15,
+            "period": "2026064",
+            "date": "03-05",
+            "num": 18,
+            "zodiac": "牛",
+            "predHit": null
+        },
+        {
+            "idx": 16,
+            "period": "2026065",
+            "date": "03-06",
+            "num": 5,
+            "zodiac": "虎",
+            "predHit": null
+        },
+        {
+            "idx": 17,
+            "period": "2026066",
+            "date": "03-07",
+            "num": 37,
+            "zodiac": "马",
+            "predHit": null
+        },
+        {
+            "idx": 18,
+            "period": "2026067",
+            "date": "03-08",
+            "num": 5,
+            "zodiac": "虎",
+            "predHit": null
+        },
+        {
+            "idx": 19,
+            "period": "2026068",
+            "date": "03-09",
+            "num": 23,
+            "zodiac": "猴",
+            "predHit": null
+        },
+        {
+            "idx": 20,
+            "period": "2026069",
+            "date": "03-10",
+            "num": 24,
+            "zodiac": "羊",
+            "predHit": null
+        },
+        {
+            "idx": 21,
+            "period": "2026070",
+            "date": "03-11",
+            "num": 25,
+            "zodiac": "马",
+            "predHit": null
+        },
+        {
+            "idx": 22,
+            "period": "2026071",
+            "date": "03-12",
+            "num": 48,
+            "zodiac": "羊",
+            "predHit": null
+        },
+        {
+            "idx": 23,
+            "period": "2026072",
+            "date": "03-13",
+            "num": 46,
+            "zodiac": "鸡",
+            "predHit": null
+        },
+        {
+            "idx": 24,
+            "period": "2026073",
+            "date": "03-14",
+            "num": 34,
+            "zodiac": "鸡",
+            "predHit": null
+        },
+        {
+            "idx": 25,
+            "period": "2026074",
+            "date": "03-15",
+            "num": 10,
+            "zodiac": "鸡",
+            "predHit": null
+        },
+        {
+            "idx": 26,
+            "period": "2026075",
+            "date": "03-16",
+            "num": 33,
+            "zodiac": "狗",
+            "predHit": null
+        },
+        {
+            "idx": 27,
+            "period": "2026076",
+            "date": "03-17",
+            "num": 2,
+            "zodiac": "蛇",
+            "predHit": null
+        },
+        {
+            "idx": 28,
+            "period": "2026077",
+            "date": "03-18",
+            "num": 29,
+            "zodiac": "虎",
+            "predHit": null
+        },
+        {
+            "idx": 29,
+            "period": "2026078",
+            "date": "03-19",
+            "num": 46,
+            "zodiac": "鸡",
+            "predHit": null
+        },
+        {
+            "idx": 30,
+            "period": "2026079",
+            "date": "03-20",
+            "num": 35,
+            "zodiac": "猴",
+            "predHit": null
+        },
+        {
+            "idx": 31,
+            "period": "2026080",
+            "date": "03-21",
+            "num": 3,
+            "zodiac": "龙",
+            "predHit": null
+        },
+        {
+            "idx": 32,
+            "period": "2026081",
+            "date": "03-22",
+            "num": 17,
+            "zodiac": "虎",
+            "predHit": null
+        },
+        {
+            "idx": 33,
+            "period": "2026082",
+            "date": "03-23",
+            "num": 27,
+            "zodiac": "龙",
+            "predHit": null
+        },
+        {
+            "idx": 34,
+            "period": "2026083",
+            "date": "03-24",
+            "num": 5,
+            "zodiac": "虎",
+            "predHit": null
+        },
+        {
+            "idx": 35,
+            "period": "2026084",
+            "date": "03-25",
+            "num": 16,
+            "zodiac": "兔",
+            "predHit": null
+        },
+        {
+            "idx": 36,
+            "period": "2026085",
+            "date": "03-26",
+            "num": 19,
+            "zodiac": "鼠",
+            "predHit": null
+        },
+        {
+            "idx": 37,
+            "period": "2026086",
+            "date": "03-27",
+            "num": 12,
+            "zodiac": "羊",
+            "predHit": null
+        },
+        {
+            "idx": 38,
+            "period": "2026087",
+            "date": "03-28",
+            "num": 26,
+            "zodiac": "蛇",
+            "predHit": null
+        },
+        {
+            "idx": 39,
+            "period": "2026088",
+            "date": "03-29",
+            "num": 27,
+            "zodiac": "龙",
+            "predHit": null
+        },
+        {
+            "idx": 40,
+            "period": "2026089",
+            "date": "03-30",
+            "num": 49,
+            "zodiac": "马",
+            "predHit": null
+        },
+        {
+            "idx": 41,
+            "period": "2026090",
+            "date": "03-31",
+            "num": 36,
+            "zodiac": "羊",
+            "predHit": null
+        },
+        {
+            "idx": 42,
+            "period": "2026091",
+            "date": "04-01",
+            "num": 37,
+            "zodiac": "马",
+            "predHit": null
+        },
+        {
+            "idx": 43,
+            "period": "2026092",
+            "date": "04-02",
+            "num": 6,
+            "zodiac": "牛",
+            "predHit": null
+        },
+        {
+            "idx": 44,
+            "period": "2026093",
+            "date": "04-03",
+            "num": 40,
+            "zodiac": "兔",
+            "predHit": null
+        },
+        {
+            "idx": 45,
+            "period": "2026094",
+            "date": "04-04",
+            "num": 17,
+            "zodiac": "虎",
+            "predHit": null
+        },
+        {
+            "idx": 46,
+            "period": "2026095",
+            "date": "04-05",
+            "num": 35,
+            "zodiac": "猴",
+            "predHit": null
+        },
+        {
+            "idx": 47,
+            "period": "2026096",
+            "date": "04-06",
+            "num": 43,
+            "zodiac": "鼠",
+            "predHit": null
+        },
+        {
+            "idx": 48,
+            "period": "2026097",
+            "date": "04-07",
+            "num": 11,
+            "zodiac": "猴",
+            "predHit": null
+        },
+        {
+            "idx": 49,
+            "period": "2026098",
+            "date": "04-08",
+            "num": 17,
+            "zodiac": "虎",
+            "predHit": null
+        },
+        {
+            "idx": 50,
+            "period": "2026099",
+            "date": "04-09",
+            "num": 12,
+            "zodiac": "羊",
+            "predHit": null
+        },
+        {
+            "idx": 51,
+            "period": "2026100",
+            "date": "04-10",
+            "num": 33,
+            "zodiac": "狗",
+            "predHit": null
+        },
+        {
+            "idx": 52,
+            "period": "2026101",
+            "date": "04-11",
+            "num": 39,
+            "zodiac": "龙",
+            "predHit": null
+        },
+        {
+            "idx": 53,
+            "period": "2026102",
+            "date": "04-12",
+            "num": 20,
+            "zodiac": "猪",
+            "predHit": null
+        },
+        {
+            "idx": 54,
+            "period": "2026103",
+            "date": "04-13",
+            "num": 6,
+            "zodiac": "牛",
+            "predHit": null
+        },
+        {
+            "idx": 55,
+            "period": "2026104",
+            "date": "04-14",
+            "num": 1,
+            "zodiac": "马",
+            "predHit": null
+        },
+        {
+            "idx": 56,
+            "period": "2026105",
+            "date": "04-15",
+            "num": 28,
+            "zodiac": "兔",
+            "predHit": null
+        },
+        {
+            "idx": 57,
+            "period": "2026106",
+            "date": "04-16",
+            "num": 22,
+            "zodiac": "鸡",
+            "predHit": null
+        },
+        {
+            "idx": 58,
+            "period": "2026107",
+            "date": "04-17",
+            "num": 49,
+            "zodiac": "马",
+            "predHit": null
+        },
+        {
+            "idx": 59,
+            "period": "2026108",
+            "date": "04-18",
+            "num": 45,
+            "zodiac": "狗",
+            "predHit": null
+        },
+        {
+            "idx": 60,
+            "period": "2026109",
+            "date": "04-19",
+            "num": 16,
+            "zodiac": "兔",
+            "predHit": null
+        },
+        {
+            "idx": 61,
+            "period": "2026110",
+            "date": "04-20",
+            "num": 30,
+            "zodiac": "牛",
+            "predHit": null
+        },
+        {
+            "idx": 62,
+            "period": "2026111",
+            "date": "04-21",
+            "num": 1,
+            "zodiac": "马",
+            "predHit": null
+        },
+        {
+            "idx": 63,
+            "period": "2026112",
+            "date": "04-22",
+            "num": 9,
+            "zodiac": "狗",
+            "predHit": null
+        },
+        {
+            "idx": 64,
+            "period": "2026113",
+            "date": "04-23",
+            "num": 2,
+            "zodiac": "蛇",
+            "predHit": null
+        },
+        {
+            "idx": 65,
+            "period": "2026114",
+            "date": "04-24",
+            "num": 30,
+            "zodiac": "牛",
+            "predHit": null
+        },
+        {
+            "idx": 66,
+            "period": "2026115",
+            "date": "04-25",
+            "num": 4,
+            "zodiac": "兔",
+            "predHit": null
+        },
+        {
+            "idx": 67,
+            "period": "2026116",
+            "date": "04-26",
+            "num": 22,
+            "zodiac": "鸡",
+            "predHit": null
+        },
+        {
+            "idx": 68,
+            "period": "2026117",
+            "date": "04-27",
+            "num": 16,
+            "zodiac": "兔",
+            "predHit": null
+        },
+        {
+            "idx": 69,
+            "period": "2026118",
+            "date": "04-28",
+            "num": 8,
+            "zodiac": "猪",
+            "predHit": null
+        },
+        {
+            "idx": 70,
+            "period": "2026119",
+            "date": "04-29",
+            "num": 11,
+            "zodiac": "猴",
+            "predHit": null
+        },
+        {
+            "idx": 71,
+            "period": "2026120",
+            "date": "04-30",
+            "num": 6,
+            "zodiac": "牛",
+            "predHit": null
+        },
+        {
+            "idx": 72,
+            "period": "2026121",
+            "date": "05-01",
+            "num": 44,
+            "zodiac": "猪",
+            "predHit": null
+        },
+        {
+            "idx": 73,
+            "period": "2026122",
+            "date": "05-02",
+            "num": 1,
+            "zodiac": "马",
+            "predHit": null
+        },
+        {
+            "idx": 74,
+            "period": "2026123",
+            "date": "05-03",
+            "num": 46,
+            "zodiac": "鸡",
+            "predHit": null
+        },
+        {
+            "idx": 75,
+            "period": "2026124",
+            "date": "05-04",
+            "num": 39,
+            "zodiac": "龙",
+            "predHit": null
+        },
+        {
+            "idx": 76,
+            "period": "2026125",
+            "date": "05-05",
+            "num": 31,
+            "zodiac": "鼠",
+            "predHit": null
+        },
+        {
+            "idx": 77,
+            "period": "2026126",
+            "date": "05-06",
+            "num": 49,
+            "zodiac": "马",
+            "predHit": null
+        },
+        {
+            "idx": 78,
+            "period": "2026127",
+            "date": "05-07",
+            "num": 45,
+            "zodiac": "狗",
+            "predHit": null
+        },
+        {
+            "idx": 79,
+            "period": "2026128",
+            "date": "05-08",
+            "num": 37,
+            "zodiac": "马",
+            "predHit": null
+        },
+        {
+            "idx": 80,
+            "period": "2026129",
+            "date": "05-09",
+            "num": 41,
+            "zodiac": "虎",
+            "predHit": null
+        },
+        {
+            "idx": 81,
+            "period": "2026130",
+            "date": "05-10",
+            "num": 29,
+            "zodiac": "虎",
+            "predHit": null
+        },
+        {
+            "idx": 82,
+            "period": "2026131",
+            "date": "05-11",
+            "num": 7,
+            "zodiac": "鼠",
+            "predHit": null
+        },
+        {
+            "idx": 83,
+            "period": "2026132",
+            "date": "05-12",
+            "num": 30,
+            "zodiac": "牛",
+            "predHit": true
+        },
+        {
+            "idx": 84,
+            "period": "2026133",
+            "date": "05-13",
+            "num": 7,
+            "zodiac": "鼠",
+            "predHit": false
+        },
+        {
+            "idx": 85,
+            "period": "2026134",
+            "date": "05-14",
+            "num": 37,
+            "zodiac": "马",
+            "predHit": true
+        },
+        {
+            "idx": 86,
+            "period": "2026135",
+            "date": "05-15",
+            "num": 30,
+            "zodiac": "牛",
+            "predHit": false
+        },
+        {
+            "idx": 87,
+            "period": "2026136",
+            "date": "05-16",
+            "num": 48,
+            "zodiac": "羊",
+            "predHit": true
+        },
+        {
+            "idx": 88,
+            "period": "2026137",
+            "date": "05-17",
+            "num": 26,
+            "zodiac": "蛇",
+            "predHit": null
+        },
+        {
+            "idx": 89,
+            "period": "2026138",
+            "date": "05-18",
+            "num": 49,
+            "zodiac": "马",
+            "predHit": true
+        },
+        {
+            "idx": 90,
+            "period": "2026139",
+            "date": "05-19",
+            "num": 24,
+            "zodiac": "羊",
+            "predHit": false
+        },
+        {
+            "idx": 91,
+            "period": "2026140",
+            "date": "05-20",
+            "num": 16,
+            "zodiac": "兔",
+            "predHit": true
+        },
+        {
+            "idx": 92,
+            "period": "2026141",
+            "date": "05-21",
+            "num": 33,
+            "zodiac": "狗",
+            "predHit": true
+        },
+        {
+            "idx": 93,
+            "period": "2026142",
+            "date": "05-22",
+            "num": 23,
+            "zodiac": "猴",
+            "predHit": true
+        },
+        {
+            "idx": 94,
+            "period": "2026143",
+            "date": "05-23",
+            "num": 44,
+            "zodiac": "猪",
+            "predHit": false
+        },
+        {
+            "idx": 95,
+            "period": "2026144",
+            "date": "05-24",
+            "num": 43,
+            "zodiac": "鼠",
+            "predHit": true
+        },
+        {
+            "idx": 96,
+            "period": "2026145",
+            "date": "05-25",
+            "num": 5,
+            "zodiac": "虎",
+            "predHit": true
+        },
+        {
+            "idx": 97,
+            "period": "2026146",
+            "date": "05-26",
+            "num": 42,
+            "zodiac": "牛",
+            "predHit": true
+        },
+        {
+            "idx": 98,
+            "period": "2026147",
+            "date": "05-27",
+            "num": 13,
+            "zodiac": "马",
+            "predHit": false
+        },
+        {
+            "idx": 99,
+            "period": "2026148",
+            "date": "05-28",
+            "num": 48,
+            "zodiac": "羊",
+            "predHit": false
+        },
+        {
+            "idx": 100,
+            "period": "2026149",
+            "date": "05-29",
+            "num": 27,
+            "zodiac": "龙",
+            "predHit": true
+        },
+        {
+            "idx": 101,
+            "period": "2026150",
+            "date": "05-30",
+            "num": 9,
+            "zodiac": "狗",
+            "predHit": true
+        },
+        {
+            "idx": 102,
+            "period": "2026151",
+            "date": "05-31",
+            "num": 31,
+            "zodiac": "鼠",
+            "predHit": true
+        },
+        {
+            "idx": 103,
+            "period": "2026152",
+            "date": "06-01",
+            "num": 45,
+            "zodiac": "狗",
+            "predHit": false
+        },
+        {
+            "idx": 104,
+            "period": "2026153",
+            "date": "06-02",
+            "num": 41,
+            "zodiac": "虎",
+            "predHit": false
+        }
+    ],
+    "prediction": {
+        "period": "2026154",
+        "date": "2026-06-03",
+        "top7": [
+            "马",
+            "牛",
+            "蛇",
+            "羊",
+            "鸡",
+            "兔",
+            "猴"
+        ],
+        "top24": [
+            1,
+            6,
+            30,
+            37,
+            46,
+            2,
+            10,
+            11,
+            12,
+            22,
+            26,
+            28,
+            35,
+            4,
+            14,
+            18,
+            25,
+            34,
+            36,
+            38,
+            40,
+            47,
+            16,
+            23
+        ],
+        "scores": {
+            "牛": 23.88,
+            "羊": 17.77,
+            "猴": 16.38,
+            "龙": 12.08,
+            "鸡": 17.07,
+            "鼠": -2.92,
+            "马": 24.66,
+            "狗": 1.88,
+            "兔": 16.78,
+            "猪": 12.99,
+            "虎": 0.06,
+            "蛇": 22.78
+        }
+    },
+    "stats": {
+        "rollHitRate": 0.65,
+        "mcHitRate": 0.604,
+        "mcP95": 0.728,
+        "liveHits": 13,
+        "liveTotal": 21
+    },
+    "zodiacCounts": {
+        "猴": 8,
+        "马": 13,
+        "蛇": 6,
+        "龙": 6,
+        "羊": 10,
+        "鼠": 7,
+        "鸡": 8,
+        "狗": 7,
+        "虎": 11,
+        "兔": 8,
+        "牛": 9,
+        "猪": 4
+    }
 }
